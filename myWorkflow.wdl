@@ -9,4 +9,8 @@ task myTask {
     output {
         String out = read_string(stdout())
     }
+    runtime {
+        docker: "reshg/lunsss:v3"
+        bootDiskSizeGb:50
+    }
 }
